@@ -34,6 +34,8 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header>
@@ -108,9 +110,10 @@
       </div>
     </header>
     <main class="container mx-auto mt-20 space-y-30">
-      <section class="flex flex-col-reverse md:flex-row items-center">
+      <!-- English is easy -->
+      <section class="flex flex-col-reverse md:flex-row items-center gap-10">
         <div
-          class="left-side space-y-5 flex flex-col justify-center text-center mx-auto md:text-left"
+          class="left-side space-y-5 flex flex-col justify-center text-center mx-auto md:text-left flex-1"
         >
           <h1 class="text-5xl font-semibold">
             <span class="text-[#00BCFF]">English</span> is Easy!!
@@ -148,11 +151,27 @@
             </form>
           </div>
         </div>
-        <div class="right-side">
+        <div class="right-side flex-1">
           <img src="./assets/hero-student.png" alt="hero-student" />
         </div>
       </section>
+      <!-- Let's Learn Vocabularies -->
+      <section class="space-y-8">
+        <h2 class="text-center text-2xl font-bold">
+          <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+        </h2>
+        <!-- all lessons button -->
+        <div
+          id="level-container"
+          class="flex gap-5 flex-wrap justify-center"
+        ></div>
+        <!--each lesson button click then show -->
+        <div
+          id="wordContainer"
+          class="bg-gray-100 p-5 mb-10 grid grid-cols-3 gap-5"
+        ></div>
+      </section>
     </main>
-    <script src="./script/styles.css"></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>
