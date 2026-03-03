@@ -4,3 +4,9 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Najmul-Huda70/Engilish-Janala.git
 git push -u origin main
+
+
+git add .
+git commit -m "each lesson btn word-display"
+git branch -M main
+git push -u origin main
